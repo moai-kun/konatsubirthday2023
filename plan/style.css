@@ -22,6 +22,53 @@ body {
     text-align: center;
 }
 
+/* header and footer */
+.header {
+    font-size: 0.5em;
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+}
+
+/* フッター本体 */
+.footer {
+    font-size: 0.5em;
+    text-align: center;
+    display: block;
+    height: 30px;
+    width: 100%;
+    /* background-color: orange; */
+    overflow: hidden;
+}
+
+/* フッター内コンテンツ */
+.footer__content {
+    display: inline-block;
+    color: #000;
+    line-height: 30px;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: animate-banner 4s linear infinite;
+}
+
+/* フッター内の要素をすべて選択 */
+.footer__content>* {
+    display: inline-block;
+}
+
+/* 横にスクロールさせるアニメーション */
+@keyframes animate-banner {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* --- プラン内ボタン --- */
 .plan1 {
     background-color: #f0dde1;
 }
@@ -38,38 +85,20 @@ body {
     background-color: #f0dddd;
 }
 
-
-
-/* プラン内ボタン */
-.plan-button {
-    font-size: 0.5em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    /* padding: 0 30px 0 30px; */
-    width: 80%;
-    border-radius: 100vh;
-    border: #4c5652;
-}
-
 /*== ボタン共通設定 */
-.btn02 {
+.plan-button {
     /*背景の基点とするためrelativeを指定*/
     position: relative;
     /*ボタンの形状*/
     display: inline-block;
-    width: 100%;
-    max-width: 250px;
+    width: 80%;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    outline: none;
 }
 
 /*ボタン内側の設定*/
-.btn02 span {
+.plan-button span {
     font-size: 0.5em;
     display: block;
     position: absolute;
@@ -85,7 +114,7 @@ body {
 /*== くるっと回転（奥に） */
 
 /* 回転前 */
-.rotateback span:nth-child(1) {
+.rotate-bf span:nth-child(1) {
     background: #fff;
     color: #000;
     transform: rotateX(0deg);
@@ -95,13 +124,13 @@ body {
 }
 
 /*hoverをした後の形状*/
-.rotateback:hover span:nth-child(1) {
-    transform: rotateX(90deg);
+.rotate-af-child1 {
     /* X軸に90度回転 */
+    transform: rotateX(90deg);
 }
 
 /* 回転後 */
-.rotateback span:nth-child(2) {
+.rotate-bf span:nth-child(2) {
     background: #000;
     color: #fff;
     transform: rotateX(-90deg);
@@ -109,21 +138,3 @@ body {
     transform-origin: 0 50% -25px;
     /* 回転する起点 */
 }
-
-/*hoverをした後の形状*/
-.rotateback:hover span:nth-child(2) {
-    transform: rotateX(0deg);
-    /* X軸に0度回転 */
-}
-
-
-/*========= レイアウトのためのCSS ===============*/
-
-/* body{
-    vertical-align:middle; 
-    padding: 100px 0;
-    text-align: center;
-}
-p{
-    margin: 0 0 10px 0;
-} */

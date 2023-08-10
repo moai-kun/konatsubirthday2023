@@ -11,44 +11,45 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" href="style.css">
-    <!-- buttonのためのcss 参照: https://codepen.io/ugokuweb/pen/qBaMxJO -->
-    <!-- <link rel="stylesheet" type="text/css"
-        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-1-10/css/7-1-10.css"> -->
     <title>こなつ誕生 - プラン</title>
 </head>
 
 <body>
-    <div class="container plan-all-container h-100" id="plan-all-container">
+    <div class="header">本日のプラン</div>
+    <div class="container plan-all-container" id="plan-all-container">
         <div class="row h-100">
-            <div class="col-12 plan-button-parent plan1">
-                <a href="#" class="btn02 rotateback">
+            <div class="col-12 plan-button-parent plan1" id="plan1">
+                <a href="#" class="plan-button rotate-bf" onclick="click_plan(this)">
                     <span>???</span>
                     <span>サーフィン</span>
                 </a>
-                <!-- <button class="plan-button">サーフィン</button> -->
             </div>
-            <div class="col-12 plan-button-parent plan2">
-                <a href="#" class="btn02 rotateback">
+            <div class="col-12 plan-button-parent plan2" id="plan2">
+                <a href="#" class="plan-button rotate-bf" onclick="click_plan(this)">
                     <span>???</span>
                     <span>お昼ご飯 & 江ノ島観光</span>
                 </a>
-                <!-- <button class="plan-button">お昼ご飯 & 江ノ島観光</button> -->
             </div>
-            <div class="col-12 plan-button-parent plan3">
-                <a href="#" class="btn02 rotateback">
+            <div class="col-12 plan-button-parent plan3" id="plan3">
+                <a href="#" class="plan-button rotate-bf" onclick="click_plan(this)">
                     <span>???</span>
                     <span>夜ごはん</span>
                 </a>
-                <!-- <button class="plan-button">夜ごはん</button> -->
             </div>
-            <div class="col-12 plan-button-parent plan4">
-                <a href="#" class="btn02 rotateback">
+            <div class="col-12 plan-button-parent plan4" id="plan4">
+                <a href="#" class="plan-button rotate-bf" onclick="click_plan(this)">
                     <span>???</span>
                     <span>ラストイベント?</span>
                 </a>
             </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <div>H a p p y B i r t h d a y ! !</div>
+    </div> -->
+    <div class="footer">
+        <div class="footer__content">
+            <p>H a p p y B i r t h d a y ! !</p>
         </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
