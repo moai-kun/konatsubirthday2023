@@ -13,9 +13,26 @@ document.addEventListener("DOMContentLoaded", function () {
 function click_plan(element) {
     let parent = element.parentElement
     // console.log(parent.id)
+
+    if (parent.id == "plan1") {
+        targetElement = document.getElementById("plan-detail-button-1");
+        targetElement.classList.remove("vi-hidden");
+        targetElement.classList.add("vi-visible");
+    } else if (parent.id == "plan2") {
+        targetElement = document.getElementById("plan-detail-button-2");
+        targetElement.classList.remove("vi-hidden");
+        targetElement.classList.add("vi-visible");
+    } else if (parent.id == "plan3") {
+        targetElement = document.getElementById("plan-detail-button-3");
+        targetElement.classList.remove("vi-hidden");
+        targetElement.classList.add("vi-visible");
+    } else if (parent.id == "plan4") {
+        targetElement = document.getElementById("plan-detail-button-4");
+        targetElement.classList.remove("vi-hidden");
+        targetElement.classList.add("vi-visible");
+    }
+
     var now = new Date();
-
-
     var Year = now.getFullYear();
     var Month = now.getMonth() + 1;
     var nDate = now.getDate();

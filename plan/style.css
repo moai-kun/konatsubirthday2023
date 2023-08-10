@@ -10,6 +10,14 @@ body {
     background-color: #ddf0e9;
 }
 
+.vi-hidden {
+    visibility: hidden;
+}
+
+.vi-visible {
+    visibility: visible;
+}
+
 .plan-all-container {
     height: 100%;
     width: 100%;
@@ -71,18 +79,22 @@ body {
 /* --- プラン内ボタン --- */
 .plan1 {
     background-color: #f0dde1;
+    position: relative;
 }
 
 .plan2 {
     background-color: #e3ddf0;
+    position: relative;
 }
 
 .plan3 {
     background-color: #e6f0dd;
+    position: relative;
 }
 
 .plan4 {
     background-color: #f0dddd;
+    position: relative;
 }
 
 /*== ボタン共通設定 */
@@ -137,4 +149,27 @@ body {
     /*はじめはX軸に-90度回転*/
     transform-origin: 0 50% -25px;
     /* 回転する起点 */
+}
+
+
+
+/* プラン詳細ページ */
+
+.plan-detail-button {
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 10%;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #333;
+    text-decoration-color: #333;
+}
+
+.modal-title {
+    font-size: 0.7em;
+}
+
+.modal-body {
+    font-size: 0.5em;
 }
