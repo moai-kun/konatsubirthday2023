@@ -76,25 +76,68 @@ body {
 }
 
 
-/* --- プラン内ボタン --- */
+/* --- プラン内ボタン 1 --- */
 .plan1 {
-    background-color: #f0dde1;
+    background-color: #a8e6cf;
     position: relative;
 }
 
+.plan1 .rotate-bf span:nth-child(1) {
+    background-color: #a8e6cf;
+    border: 2px solid #6e9587;
+}
+
+.plan1 .rotate-bf span:nth-child(2) {
+    background-color: #6e9587;
+    border: 2px solid #6e9587;
+}
+
+/* --- プラン内ボタン 2 --- */
 .plan2 {
-    background-color: #e3ddf0;
+    background-color: #dcedc1;
     position: relative;
 }
 
+.plan2 .rotate-bf span:nth-child(1) {
+    background-color: #dcedc1;
+    border: 2px solid #778069;
+}
+
+.plan2 .rotate-bf span:nth-child(2) {
+    background-color: #778069;
+    border: 2px solid #778069;
+}
+
+/* --- プラン内ボタン 3 --- */
 .plan3 {
-    background-color: #e6f0dd;
+    background-color: #ffd3b6;
     position: relative;
 }
 
+.plan3 .rotate-bf span:nth-child(1) {
+    background-color: #ffd3b6;
+    border: 2px solid rgb(83, 90, 73);
+}
+
+.plan3 .rotate-bf span:nth-child(2) {
+    background-color: rgb(83, 90, 73);
+    border: 2px solid rgb(83, 90, 73);
+}
+
+/* --- プラン内ボタン 4 --- */
 .plan4 {
-    background-color: #f0dddd;
+    background-color: #ffaaa5;
     position: relative;
+}
+
+.plan4 .rotate-bf span:nth-child(1) {
+    background-color: #ffaaa5;
+    border: 2px solid #875b59;
+}
+
+.plan4 .rotate-bf span:nth-child(2) {
+    background-color: #875b59;
+    border: 2px solid #875b59;
 }
 
 /*== ボタン共通設定 */
@@ -107,6 +150,7 @@ body {
     height: 50px;
     line-height: 50px;
     text-align: center;
+    /* border: 1px solid #333; */
 }
 
 /*ボタン内側の設定*/
@@ -116,7 +160,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 1px solid #333;
+    border-radius: 5px;
+    /* border: 1px solid #333; */
     /* 重なりを3Dで表示 */
     transform-style: preserve-3d;
     /* アニメーションの設定 数字が少なくなるほど早く回転 */
@@ -144,7 +189,8 @@ body {
 /* 回転後 */
 .rotate-bf span:nth-child(2) {
     background: #000;
-    color: #fff;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     transform: rotateX(-90deg);
     /*はじめはX軸に-90度回転*/
     transform-origin: 0 50% -25px;
