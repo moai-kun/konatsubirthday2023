@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 10vw;
+    background-color: #ddf0e9;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.vi-hidden {
+    visibility: hidden;
+}
+
+.last-text {
+    text-align: center;
+    font-size: 0.3em;
+}
+
+.form-parent {
+    display: flex;
+    /* Flexboxを使用 */
+    justify-content: center;
+    /* 横方向の中央寄せ */
+    z-index: 100;
+}
+
+.last-input-form {
+
+    text-align: center;
+    font-size: 0.5em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.last-form-submit {
+
+    text-align: center;
+    font-size: 0.5em;
+    width: 50%;
+}
